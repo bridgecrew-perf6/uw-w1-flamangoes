@@ -1,0 +1,65 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('../images/stephane-yaich-pUV1phrNReo-unsplash_small.jpg') repeat;
+	font-family: sans-serif;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+
+header, .container, footer { flex: 1 0 auto; }
+
+header {
+	text-align: center;
+	color: white;
+	background-color: deepskyblue;
+	padding: 2rem 1rem;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+main, aside { flex: 1 0 auto; }
+
+main {
+	position: relative;
+	max-width: 60%;
+	margin-right: 5%;
+	background-color: hotpink;
+}
+
+aside {
+	background-color: lemonchiffon;
+	padding: 1rem 3rem;
+	max-width: 15%;
+}
+
+img {
+	position: relative;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 40%;
+	margin: 5% auto;
+	left: 30%;
+	border: 15px solid yellowgreen;
+}
+
+img:nth-child(2) {
+	z-index: 10;
+	position: absolute;
+	bottom: 18px;
+	left: calc(30% + 15px);
+	opacity: 0.8;
+	border: 0;
+	width: calc(40% - 30px);
+}
